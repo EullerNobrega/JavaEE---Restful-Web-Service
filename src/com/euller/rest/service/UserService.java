@@ -1,4 +1,4 @@
-package com.euller.rest;
+package com.euller.rest.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,11 +14,13 @@ public class UserService {
 	@Produces("aplication/json")
 	public Response getUsers() {
 		JSONObject jsonObject =  new JSONObject();
-		jsonObject.put("value 1", 1);
-		jsonObject.put("value 2", 6);
+		
+		
 		
 		String result = "('application/json') Output: \n\n" + jsonObject;
 		return Response.status(200).entity(result).build();
 	}
+	
+
 }
 		
