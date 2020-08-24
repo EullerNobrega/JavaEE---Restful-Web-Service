@@ -1,4 +1,4 @@
-package com.euller.rest.service;
+package com.euller.rest.controller;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 import org.json.JSONObject;
 
 @Path("/users")
-public class UserService {
+public class UserController {
 
 	@GET
 	@Produces("aplication/json")
